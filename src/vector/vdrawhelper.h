@@ -23,6 +23,10 @@
 #ifndef VDRAWHELPER_H
 #define VDRAWHELPER_H
 
+#ifdef __APPLE__
+#undef __ARM_NEON__
+#endif /* __APPLE__ */
+
 #include <memory>
 #include <array>
 #include "assert.h"

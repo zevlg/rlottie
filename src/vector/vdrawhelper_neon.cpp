@@ -1,6 +1,6 @@
-#if defined(__ARM_NEON__)
-
 #include "vdrawhelper.h"
+
+#if defined(__ARM_NEON__)
 
 extern "C" void pixman_composite_src_n_8888_asm_neon(int32_t w, int32_t h,
                                                      uint32_t *dst,
